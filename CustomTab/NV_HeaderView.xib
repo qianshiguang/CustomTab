@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8ON-b1-1cH">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="wGd-pX-M5i">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyg-B0-URe">
+                    <rect key="frame" x="160" y="31" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="7EZ-vL-AhI"/>
+                        <constraint firstAttribute="height" constant="55" id="kbY-7p-Dro"/>
+                    </constraints>
+                    <state key="normal" image="individual_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浅时光" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXm-vC-6dj">
+                    <rect key="frame" x="162" y="94" width="51" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wGd-pX-M5i" firstAttribute="leading" secondItem="8ON-b1-1cH" secondAttribute="leading" id="5sp-Kh-vof"/>
+                <constraint firstItem="Dyg-B0-URe" firstAttribute="top" secondItem="8ON-b1-1cH" secondAttribute="top" constant="31" id="Iuh-BO-hNz"/>
+                <constraint firstAttribute="bottom" secondItem="wGd-pX-M5i" secondAttribute="bottom" id="cOo-Kx-g82"/>
+                <constraint firstAttribute="centerX" secondItem="Dyg-B0-URe" secondAttribute="centerX" id="ehO-KK-Fqf"/>
+                <constraint firstItem="wGd-pX-M5i" firstAttribute="top" secondItem="8ON-b1-1cH" secondAttribute="top" id="h6O-QP-mOu"/>
+                <constraint firstAttribute="trailing" secondItem="wGd-pX-M5i" secondAttribute="trailing" id="i4N-8p-BMt"/>
+                <constraint firstItem="YXm-vC-6dj" firstAttribute="top" secondItem="Dyg-B0-URe" secondAttribute="bottom" constant="8" id="kzm-In-uay"/>
+                <constraint firstAttribute="centerX" secondItem="YXm-vC-6dj" secondAttribute="centerX" id="taB-Al-ar1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="227.5" y="394"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner" width="320" height="130"/>
+        <image name="individual_icon" width="55" height="55"/>
+    </resources>
+</document>
